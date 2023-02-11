@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>Booking</title>
+  
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+     
+     <style media="screen">
+       *,
+ *:before,
+ *:after {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ body{
+     background-color: #080710;
+ }
+ .background{
+     width: 400px;
+     height: 600px;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     left: 50%;
+     top: 50%;
+ }
+ .background .shape{
+     height: 100px;
+     width: 200px;
+     position: absolute;
+     border-radius: 50%;
+ }
+ form{
+     height: 80rem;
+     width: 30rem;
+     background-color: rgba(255,255,255,0.13);
+     position: absolute;
+     transform: translate(-50%,-50%);
+     top: 100%;
+     left: 50%;
+     border-radius: 10px;
+     backdrop-filter: blur(10px);
+     border: 2px solid rgba(255,255,255,0.1);
+     box-shadow: 0 0 40px rgba(8,7,16,0.6);
+     padding: 50px 35px;
+ }
+ form *{
+     font-family: 'Poppins',sans-serif;
+     color: #ffffff;
+     letter-spacing: 0.5px;
+     outline: none;
+     border: none;
+ }
+ form h3{
+     font-size: 50px;
+     font-weight: 500;
+     line-height: 50px;
+     text-align: center;
+ }
+ 
+ label{
+     display: block;
+     margin-top: 20px;
+     font-size: 16px;
+     font-weight: 500;
+ }
+ input{
+     display: block;
+     height: 50px;
+     width: 100%;
+     background-color: rgba(255,255,255,0.07);
+     border-radius: 3px;
+     padding: 0 10px;
+     margin-top: 5px;
+     font-size: 14px;
+     font-weight: 300;
+ }
+ ::placeholder{
+     color: #e5e5e5;
+ }
+ button{
+     margin-top: 20px;
+     width: 100%;
+     background-color: #ffffff;
+     color: #080710;
+     padding: 15px 0;
+     font-size: 18px;
+     font-weight: 600;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+</style>
+
+  </head>
+  <body>
+    <form action="Booking.php" method="post" name="Booking">
+           
+          <h3>Welcome to Our Family</h3>
+            
+          <label for="name">FULL NAME</label>
+          <input type="text" placeholder="Enter Your Name" id="name" name="txt1">
+
+          <label for="FunctionName">Function Name</label>
+          <input type="text" placeholder="Enter Function Name" id="name" name="txt2">
+  
+          <label for="phone">Phone</label>
+          <input type="integer" placeholder="Enter Your Phone" id="phone" name="txt3">
+
+          <label for="Email">Email</label>
+          <input type="email" placeholder="Email" id="Email" name="txt4">
+
+          <label for="Pincode">Pincode</label>
+          <input type="number" placeholder="Pincode" id="Pincode" name="txt5">
+  
+          <label for="House No.">House No.</label>
+          <input type="text" placeholder="House No." id="House No." name="txt6">
+
+          <label for="Area">Area</label>
+          <input type="text" placeholder="Area" id="Area" name="txt7">
+
+          <label for="Landmark">Landmark</label>
+          <input type="text" placeholder="Landmark" id="Landmark" name="txt8">
+
+          <label for="City">Town/City</label>
+          <input type="text" placeholder="City" id="City" name="txt9">
+
+          <label for="State">State</label>
+          <input type="text" placeholder="State" id="State" name="txt10">
+
+          <input type="submit" name="btn2" value="Submit">
+
+          <!-- <button onclick = "fun()">Submit -->
+          <!-- <a href="thankyou.html">Submit</a></button> -->
+            
+            
+      </form>
+  </body>
+  </html>
