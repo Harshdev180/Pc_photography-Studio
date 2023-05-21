@@ -15,8 +15,9 @@
      margin: 0;
      box-sizing: border-box;
  }
+ 
  body{
-     background-color: #080710;
+     background-image:url(./images/signbg.jpg);
  }
  .background{
      width: 200px;
@@ -33,7 +34,7 @@
      border-radius: 50%;
  }
  form{
-     height: 600px;
+     height: 580px;
      width: 400px;
      background-color: rgba(255,255,255,0.13);
      position: absolute;
@@ -41,14 +42,15 @@
      top: 50%;
      left: 50%;
      border-radius: 10px;
-     backdrop-filter: blur(10px);
-     border: 2px solid rgba(255,255,255,0.1);
+     backdrop-filter: blur(20px);
+     border: 2px solid rgba(3, 3, 3, 0.1);
      box-shadow: 0 0 40px rgba(8,7,16,0.6);
      padding: 50px 35px;
+     opacity: 1;
  }
  form *{
      font-family: 'Poppins',sans-serif;
-     color: #ffffff;
+     color: #000000;
      letter-spacing: 0.5px;
      outline: none;
      border: none;
@@ -75,10 +77,11 @@
      padding: 0 10px;
      margin-top: 5px;
      font-size: 14px;
-     font-weight: 300;
+     font-weight: 500;
+     border: 2px solid black;
  }
  ::placeholder{
-     color: #e5e5e5;
+     color: #000000;
  }
  button{
      margin-top: 20px;
@@ -90,6 +93,9 @@
      font-weight: 600;
      border-radius: 5px;
      cursor: pointer;
+ }
+ button:hover{
+    background-color: rgba(255, 255, 255, 0.699);
  }
  .Log_In {
     margin-top: 5px;
@@ -103,7 +109,7 @@
  </style><form action="action_page.php">
   </head>
   <body>
-      <form name="home" data-netlify="true" method="POST">
+      <form name="home" action="connection.php" method="post">
           <h3>Sign Up</h3>
   
           <label for="name">Name</label>
@@ -113,14 +119,13 @@
           <input type="integer" placeholder="Enter Your Number" id="phone" name="txt2">
 
           <label for="Email">Email</label>
-          <input type="Email" placeholder="Email" id="Email" name="txt3">
+          <input type="Email" placeholder="Enter Your Email" id="Email" name="txt3">
   
           <label for="password">Password</label>
-          <input type="password" placeholder="Password" id="password" name="txt4">
+          <input type="password" placeholder="Enter Your Password" id="password" name="txt4">
   
           <a href="./Booking.html"><button>Signup</button></a>
-            <a href="home.html">Log In</a></button>
-          </ul>  
+          <a href="./home.html">Log In</a> 
       </form>
   </body>
   </html>
